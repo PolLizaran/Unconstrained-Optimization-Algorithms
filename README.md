@@ -14,3 +14,7 @@ Some of the algorithms uploaded use First Derivative Methods and others use Seco
 - Newton Methods (NM)
 - Modified Newton Methods with Singular Value Decomposition (MNM-SD)
 - Modified Newton Methods with Cholesky Factorization (MNM-CMI)
+
+---
+
+Developed by Pol Lizaran Campano (github.com/PolLizaran)
