@@ -17,4 +17,4 @@ Some of the algorithms uploaded use First Derivative Methods and others use Seco
 
 ---
 
-Developed by Pol Lizaran Campano (github.com/PolLizaran)
+Developed by Pol Lizaran Campano (https://github.com/PolLizaran)
