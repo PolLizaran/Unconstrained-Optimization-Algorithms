@@ -1,5 +1,15 @@
-%﻿ iW= 0: exact LS; IW=1: BLS with WC; iW=2: BLS with SWC
-% Hk = Bk per isd = 5,6
+% Function that allows to call all the different Methods by using some descent direction methods and some line search methods
+
+% Parameters:
+% x = initial point, f = fuction to optimize, g = gradient of f, h = hessian of f
+% epsG = optimality tolerance, kmax = maximum number of iterations
+% almax, almin = delimiters of alpha (Backtracking line search)
+% rho = reduction factor of BLS, c1 = parameter for the First Wolfe Condition
+% c2 = parameter for the Second Wolfe Condition
+% iW: Backtracking line Search method that want to be used (iW = 0: exact LS; iW=1: BLS with WC; iW=2: BLS with SWC)
+% isd = Search direction method (1 = GM; 2 = CGM; 3 = BFGS; 4 = NM; 5 = MNM-SD; 6 = MNM-CMI)
+% icg = CGM variant (1 = FR; 2 = PR), irc = Restart condition (0 = No restart; 1 = RC1; 2 = RC2)
+% nu = v (used in RC2), delta = parameter of MNM-CMI
 
 function [xk,dk,alk,iWk,betak,Hk,tauk]= ...
           uo_solve(x, f, g, h, epsG, kmax, almax, almin, rho, c1, c2, iW, isd, icg, irc, nu, delta)
@@ -34,7 +44,3 @@ function [xk,dk,alk,iWk,betak,Hk,tauk]= ...
     end
     fprintf(' \n Final  [uo_solve]\n\n');
 end
-
-
-
-%[xk, dk, alk, iWk] = GM_BLS(x, f, g, h, epsG, kmax, almax, almin, rho, c1, c2, iW);
