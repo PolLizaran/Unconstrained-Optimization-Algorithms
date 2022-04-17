@@ -1,3 +1,6 @@
+% Function that allows to display the results obtained with uo_solve.m
+% xo = Convergence point, if unknown (xo = []), xylim = limits of the plot, logfreq = frequency of the iterations display
+
 function [gk,la1k,kappak,rk,Mk] = uo_solve_log(x1,f,g,h,epsG,kmax,almax,almin,rho,c1,c2,iW,isd,icg,irc,nu,delta,xk,dk,alk,iWk,betak,Hk,tauk,xo,xylim,logfreq)
 diary ('uo_solve_log.out'); diary on;
 niter = size(xk,2); n= size(x1,1); nxo = size(xo,1);
