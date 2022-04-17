@@ -6,6 +6,8 @@ Every Matlab file whose name is in upper cases, cointains a different Unconstrai
 
 Some of the algorithms uploaded use First Derivative Methods and others use Second Derivative Methods.
 
+All the Algorithms can be called throughout 'uo_solve.m'.
+
 ## Algorithms: 
 
 - Gradient Method (GM)
